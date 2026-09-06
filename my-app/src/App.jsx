@@ -2,6 +2,8 @@ import Aurora from './components/Aurora/Aurora';
 import ShinyText from './components/ShinyText/ShinyText';
 import SpotlightCard from './components/SpotlightCard/SpotlightCard';
 import CountUp from './components/CountUp/CountUp';
+import { Plasma } from './components/Plasma/Plasma';
+import GlitchText from './components/GlitchText/GlitchText';
 
 const FEATURES = [
   { title: 'Ship faster', body: 'Reusable, animated building blocks so you spend time on your product, not on motion polish.' },
@@ -31,6 +33,18 @@ function App() {
           <button className="mt-8 rounded-full bg-white px-6 py-3 font-medium text-neutral-950 transition hover:bg-neutral-200">
             Get started
           </button>
+        </div>
+      </section>
+
+      <section className="relative h-[420px] w-full overflow-hidden bg-[#0a0a12]">
+        <Plasma color="#ff2fd8" speed={0.6} direction="forward" scale={1.1} opacity={0.6} mouseInteractive={false} />
+        <div className="absolute inset-0 flex flex-col items-center justify-center gap-4 text-center px-6">
+          <GlitchText speed={0.6} enableShadows>
+            NEW DROP
+          </GlitchText>
+          <p className="max-w-md text-neutral-300">
+            Free-tier alternatives to the Pro "Neon Reveal" and "Spectral Clouds" effects — a plasma field behind a glitching headline.
+          </p>
         </div>
       </section>
 
