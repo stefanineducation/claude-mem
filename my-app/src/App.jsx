@@ -9,6 +9,7 @@ import LogoLoop from './components/LogoLoop/LogoLoop';
 import ClickSpark from './components/ClickSpark/ClickSpark';
 import StarBorder from './components/StarBorder/StarBorder';
 import EnrolHero from './components/EnrolHero/EnrolHero';
+import southernAcademyLogo from './assets/southern-academy-logo.png';
 
 const NAV_ITEMS = [
   { label: 'Product', href: '#' },
@@ -38,7 +39,7 @@ function App() {
   return (
     <ClickSpark sparkColor="#fff" sparkCount={8} sparkRadius={20}>
       <div className="min-h-screen bg-neutral-950 text-white">
-        <EnrolHero />
+        <EnrolHero logoSrc={southernAcademyLogo} logoAlt="Southern Academy of Higher Education" />
 
         <header className="flex items-center justify-between px-6 py-4">
           <span className="text-lg font-semibold">Acme</span>
