@@ -1,3 +1,5 @@
+import SouthernAcademyLogo from './SouthernAcademyLogo';
+
 const EnrolHero = ({ logoSrc, logoAlt = 'Logo', onApply }) => {
   return (
     <section
@@ -19,14 +21,12 @@ const EnrolHero = ({ logoSrc, logoAlt = 'Logo', onApply }) => {
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_40%,rgba(1,31,91,0.35)_100%)]" />
 
       <div className="relative z-10 flex w-full max-w-3xl flex-1 flex-col items-center justify-center text-center">
-        {/* Logo placeholder */}
-        <div className="mb-10 flex h-20 w-48 items-center justify-center sm:h-24 sm:w-56">
+        {/* Logo */}
+        <div className="mb-10 flex h-40 w-64 items-center justify-center sm:h-48 sm:w-80">
           {logoSrc ? (
             <img src={logoSrc} alt={logoAlt} className="max-h-full max-w-full object-contain" />
           ) : (
-            <div className="flex h-full w-full items-center justify-center rounded-xl border-2 border-dashed border-white/40 text-sm font-medium text-white/60">
-              Your Logo Here
-            </div>
+            <SouthernAcademyLogo className="h-full w-full text-white drop-shadow-[0_2px_16px_rgba(0,0,0,0.25)]" />
           )}
         </div>
 
